@@ -1,5 +1,14 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+
+@import 'base/variables';
+@import 'base/animations';
+*{
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
 .container{
     position: relative;
-    max-width: 950px;
+    max-width: 1141px;
     margin: 0 auto;
 }
+@import 'blocks/header';
