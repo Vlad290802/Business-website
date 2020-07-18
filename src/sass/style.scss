@@ -8,7 +8,9 @@
 }
 .container{
     position: relative;
-    max-width: 1141px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 @import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
