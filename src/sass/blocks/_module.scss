@@ -1,0 +1,40 @@
+.module{
+    min-height: 900px;
+    padding: 80px 0 80px 0;
+    &__first, &__second{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    img{
+        z-index: 1;
+    }
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: -82px;
+        text-align: center;
+        z-index: 2;
+    }
+    &__png{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 86px;
+    }
+    &__png2{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -25px;
+    }
+    h1{
+        margin-top: 33px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+    }
+    &__second{
+        margin-top: 37px;
+    }
+}

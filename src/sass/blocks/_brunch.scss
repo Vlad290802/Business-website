@@ -1,0 +1,70 @@
+.brunch{
+    min-height: 889px;
+    padding: 79px 0 61px 0;
+    background: url(../img/prengigirl.jpg) center (center/cover) no-repeat;
+    h2{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.2;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+    table{
+        width: 843px; /* Ширина таблицы */
+        background: none; /* Цвет фона таблицы */
+        color: white; /* Цвет текста */
+        border-spacing: 1px;
+        height: 65px;
+        border-radius: 4px;
+        border: solid 1px #ffffff;
+        border-collapse: separate;
+        margin: 0 auto;
+    }
+    &__tabs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        width: 100%;
+        margin-top: 15px;
+        list-style-type: none;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    &__tab{
+        margin-left: -60px;
+        margin-right: 16px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__carousel{
+        margin-top: 35px;
+        transform: translateX(10%);
+        width: 947px;
+        &__inner{
+            position: relative;
+            width: 947px;
+            margin: 0 auto;
+        }
+        .slick-prev, .slick-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-60%);
+            left: -59px;
+            border: none;
+            background-color: inherit;
+            img{
+                width: 18px;
+                height: 60px;
+            }
+        }
+        .slick-next{
+            right: -85px;
+            left: auto;
+        }
+    }
+}

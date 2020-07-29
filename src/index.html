@@ -7,10 +7,11 @@
     <link rel="icon" href="https://prengi.com" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header"> 
+    <header class="header" id="header"> 
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -68,13 +69,13 @@
                 <a href="#" class="promo__logo">
                     <img src="icons/prengi.png" alt="prengi">
                 </a>
-                <ul class="promo__tabs">
-                    <li class="promo__tab promo__tab_active"><div>главная</div></li>
-                    <li class="promo__tab"><div>Модули</div></li>
-                    <li class="promo__tab"><div>Отрасли</div></li>
-                    <li class="promo__tab"><div>О нас</div></li>
-                    <li class="promo__tab"><div>Наши обязательства</div></li>
-                </ul>
+                    <ul class="promo__menu">
+                        <li><a href="#header" class="promo__link">главная</a></li>
+                        <li><a href="#module" class="promo__link">Модули</a></li>
+                        <li><a class="promo__link">Отрасли</a></li>
+                        <li><a class="promo__link">О нас</a></li>
+                        <li><a class="promo__link">Наши обязательства</a></li>
+                    </ul>
 
                 <div class="promo__wrapper">
                     <h2 class="promo__title">
@@ -85,16 +86,110 @@
                         управления бизнесом
                     </div>
                     <button class="button button_main">Получить доступ</button>
+
+                    <div class="promo__carousel">
+                        <div>
+                            <img src="icons/phone.png" alt="phone">
+                        </div>
+                        <div>
+                            <img src="icons/phone2.png" class="promo__phone2" alt="phone2">
+                        </div>
+                        <div>
+                            <img src="icons/phone3.png" alt="phone3">
+                        </div>
+                        <div>
+                            <img src="icons/phone.png" alt="phone">
+                        </div>
+                        <div>
+                            <img src="icons/komp_3.png" class="promo__komp" alt="ipad">
+                        </div>
+                    </div>
                 </div>
-
-                
-
-                <div class="promo__carousel">
-
-                </div>
-                
-            
         </div>
     </section>
+
+    <section class="module" id="module">
+        <div class="container">
+            <div class="module__first">
+                <div>
+                    <img src="icons/timetable.png" alt="timetable">
+                    <div class="module__subtitle">Нет оперативности<br>
+                        в принятии решений?</div>
+                </div>
+                <div>
+                    <img src="icons/control.png" alt="control">
+                    <div class="module__subtitle">Нет учета и контроля<br>обслуживания?</div>
+                </div>
+                <div>
+                    <img src="icons/diagnostic.png" alt="diagnostic">
+                    <div class="module__subtitle">Сложно строить прогнозы и<br>анализировать данные?</div>
+                </div>
+            </div>
+            <img src="icons/arrowdown.png" class="module__png" alt="arrowdown">
+            <img src="icons/arrowdown.png" class="module__png2" alt="arrowdown">
+            <h1>С PRENGI</h1>
+            <div class="module__second">
+                <div>
+                    <img src="icons/payments.png" alt="payments">
+                    <div class="module__subtitle">Все затраты спланированы<br>
+                        и расписаны?</div>
+                </div>
+                <div>
+                    <img src="icons/online.png" alt="online">
+                    <div class="module__subtitle">Корректная аналитика данных<br>online</div>
+                </div>
+                <div>
+                    <img src="icons/integration.png" alt="integration">
+                    <div class="module__subtitle">Простая интеграция с любым<br>Вашим ПО</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brunch">
+        <div class="container">
+            <h2>Prengi предоставляет экспертные решения<br>
+                для Вашей отрасли</h2>
+                <table>
+                    <tr><th>
+                        <ul class="brunch__tabs">
+                            <li class="brunch__tab brunch__tab_active"><div>Prengi Production</div></li>
+                            <li class="brunch__tab"><div>Prengi FMC</div></li>
+                            <li class="brunch__tab"><div>Prengi Mallz Retail</div></li>
+                            <li class="brunch__tab"><div>Prengi Logistic</div></li>
+                            <li class="brunch__tab"><div>Prengi IT</div></li>
+                            <li class="brunch__tab"><div>Prengi HR</div></li>
+                        </ul>
+                    </th></tr>
+                </table>
+                <div class="brunch__carousel">
+                    <div class="brunch__inner">
+                        <div>
+                            <img src="icons/macbook.png" alt="macbook">
+                        </div>
+                        <div>
+                            <img src="icons/macbook2.png" alt="macbook2">
+                        </div>
+                        <div>
+                            <img src="icons/macbook3.png" alt="macbook3">
+                        </div>
+                        <div>
+                            <img src="icons/macbook4.png" alt="macbook4">
+                        </div>
+                        <div>
+                            <img src="icons/macbook.png" alt="macbook">
+                        </div>
+                        <div>
+                            <img src="icons/macbook3.png" alt="macbook3">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

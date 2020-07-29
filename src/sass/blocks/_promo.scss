@@ -1,22 +1,31 @@
 .promo{
     min-height: 700px;
     padding: 39px 0 0 0;
-    background: url(../img/promo_img.jpg) center (center/cover) no-repeat;
+    background: url(../img/promo.jpg) center (center/cover) no-repeat;
     &__wrapper{
         display: block;
         margin-top: 133px;
     }
-    &__tabs{
+    &__menu{
         display: flex;
         justify-content: space-between;
-        padding-left: 460px;
-        margin-top: -30px;
+        margin-left: 600px;
         font-size: 13px;
+        margin-top: -30px;
         font-weight: bold;
         text-align: right;
         color: #ffffff;
         text-transform: uppercase;
         list-style-type: none;
+    }
+    &__link{
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+            transition: 0.5s all;
+            color: $main-color;
+            text-decoration: none;
+        }
     }
     &__title{
         font-size: 42px;
@@ -33,6 +42,61 @@
         span{
             font-weight: 400;
             text-transform: uppercase;
+        }
+    }
+    &__carousel{
+        position: relative;
+        margin-left: 716px;
+        margin-top: -383px;
+    }
+    &__phone2{
+        transform: translateY(14%);
+    }
+    &__komp{
+        transform: translateY(65%);
+    }
+    .slick-prev{
+        position: absolute;
+        left: -190px;
+        margin-top: 515px;
+        border: none;
+        background-color: inherit;
+        img{
+            width: 6px;
+            height: 11px;
+        }
+    }
+    .slick-next{
+        position: absolute;
+        left: -97px;
+        right: auto;
+        margin-top: -55px;
+        border: none;
+        background-color: inherit;
+        img{
+            width: 6px;
+            height: 11px;
+        }
+    }
+    .slick-dots{
+        display: inline;
+        position: absolute;
+        bottom: 20%;
+        left: -30%;
+        transform:translateX(-50%) ;
+        list-style-type: none;
+        button{
+            position: inherit;
+            margin-top: 20px;
+            margin: 0 4px;
+            width: 5px;
+            height: 10px;
+            background-color: black;
+            border-radius: 100%;
+            border: none;
+        }
+        .slick-dots-active{
+            background-color: $main-color;
         }
     }
 }
