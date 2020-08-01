@@ -1,0 +1,23 @@
+@keyframes aimbeat{
+    from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes pointer{
+    from{
+        transform: translateY(-10%);
+    }
+    50%{
+        transform: translateY(35%);
+    }
+    to{
+        transform: translateY(-10%);
+    }
+}

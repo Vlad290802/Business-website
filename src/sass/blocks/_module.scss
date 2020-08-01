@@ -21,12 +21,24 @@
         margin: 0 auto;
         text-align: center;
         margin-top: 86px;
+        &_animated{
+            animation-name: pointer;
+            animation-duration: 1.4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
     }
     &__png2{
         display: block;
         margin: 0 auto;
         text-align: center;
         margin-top: -25px;
+        &_animated{
+            animation-name: pointer;
+            animation-duration: 1.4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
     }
     h1{
         margin-top: 33px;

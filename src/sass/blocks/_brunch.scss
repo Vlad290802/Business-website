@@ -40,6 +40,13 @@
         font-weight: normal;
         text-align: center;
         color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            transition: 0.5s all;
+            color: $main-color;
+            text-decoration: none;
+        }
     }
     &__carousel{
         margin-top: 35px;

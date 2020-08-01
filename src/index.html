@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header" id="header"> 
+    <header id="up" class="header"> 
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -64,16 +64,16 @@
         </div>
     </header>
 
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="container">
                 <a href="#" class="promo__logo">
                     <img src="icons/prengi.png" alt="prengi">
                 </a>
                     <ul class="promo__menu">
-                        <li><a href="#header" class="promo__link">главная</a></li>
+                        <li><a href="#promo" class="promo__link">главная</a></li>
                         <li><a href="#module" class="promo__link">Модули</a></li>
-                        <li><a class="promo__link">Отрасли</a></li>
-                        <li><a class="promo__link">О нас</a></li>
+                        <li><a href="#brunch" class="promo__link">Отрасли</a></li>
+                        <li><a href="#advantages" class="promo__link">О нас</a></li>
                         <li><a class="promo__link">Наши обязательства</a></li>
                     </ul>
 
@@ -125,8 +125,8 @@
                     <div class="module__subtitle">Сложно строить прогнозы и<br>анализировать данные?</div>
                 </div>
             </div>
-            <img src="icons/arrowdown.png" class="module__png" alt="arrowdown">
-            <img src="icons/arrowdown.png" class="module__png2" alt="arrowdown">
+            <img src="icons/arrowdown.png" class="module__png module__png_animated" alt="arrowdown">
+            <img src="icons/arrowdown.png" class="module__png2 module__png2_animated" alt="arrowdown">
             <h1>С PRENGI</h1>
             <div class="module__second">
                 <div>
@@ -146,46 +146,169 @@
         </div>
     </section>
 
-    <section class="brunch">
+    <section class="brunch" id="brunch">
         <div class="container">
             <h2>Prengi предоставляет экспертные решения<br>
                 для Вашей отрасли</h2>
-                <table>
-                    <tr><th>
-                        <ul class="brunch__tabs">
-                            <li class="brunch__tab brunch__tab_active"><div>Prengi Production</div></li>
-                            <li class="brunch__tab"><div>Prengi FMC</div></li>
-                            <li class="brunch__tab"><div>Prengi Mallz Retail</div></li>
-                            <li class="brunch__tab"><div>Prengi Logistic</div></li>
-                            <li class="brunch__tab"><div>Prengi IT</div></li>
-                            <li class="brunch__tab"><div>Prengi HR</div></li>
-                        </ul>
-                    </th></tr>
-                </table>
-                <div class="brunch__carousel">
-                    <div class="brunch__inner">
-                        <div>
-                            <img src="icons/macbook.png" alt="macbook">
-                        </div>
-                        <div>
-                            <img src="icons/macbook2.png" alt="macbook2">
-                        </div>
-                        <div>
-                            <img src="icons/macbook3.png" alt="macbook3">
-                        </div>
-                        <div>
-                            <img src="icons/macbook4.png" alt="macbook4">
-                        </div>
-                        <div>
-                            <img src="icons/macbook.png" alt="macbook">
-                        </div>
-                        <div>
-                            <img src="icons/macbook3.png" alt="macbook3">
+                <div class="tabcontainer">
+                    <table>
+                        <tr><th>
+                            <ul class="brunch__tabs">
+                                <li class="brunch__tab brunch__tab_active">Prengi Production</li>
+                                <li class="brunch__tab">Prengi FMC</li>
+                                <li class="brunch__tab">Prengi Mallz Retail</li>
+                                <li class="brunch__tab">Prengi Logistic</li>
+                                <li class="brunch__tab">Prengi IT</li>
+                                <li class="brunch__tab">Prengi HR</li>
+                            </ul>
+                        </th></tr>
+                    </table>
+                    <div class="brunch__carousel">
+                        <div class="brunch__inner">
+                            <div class="brunch__content brunch__content_active">
+                                <img src="icons/macbook.png" alt="macbook">
+                            </div>
+                            <div class="brunch__content">
+                                <img src="icons/macbook2.png" alt="macbook2">A
+                            </div>
+                            <div class="brunch__content">
+                                <img src="icons/macbook3.png" alt="macbook3">
+                            </div>
+                            <div class="brunch__content">
+                                <img src="icons/macbook4.png" alt="macbook4">
+                            </div>
+                            <div class="brunch__content">
+                                <img src="icons/macbook.png" alt="macbook">
+                            </div>
+                            <div class="brunch__content">
+                                <img src="icons/macbook3.png" alt="macbook3">
+                            </div>
                         </div>
                     </div>
                 </div>
         </div>
     </section>
+
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <h2>Преимущества Prengi для<br>
+                Вашей отрасли</h2>
+                <!-- <div class="advantages__images">
+                    <div class="row">
+                        <div class="col">
+                            <div class="advantages__item">
+                                <img class="advantages__img13" src="img/Layer1.jpg" alt="Layer1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="advantages__item">
+                                <img class="advantages__img246" src="img/Layer2.jpg" alt="Layer2">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="advantages__item">
+                                <img class="advantages__img13" src="img/Layer3.jpg" alt="Layer3">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="advantages__item">
+                                <img class="advantages__img246" src="img/Layer4.jpg" alt="Layer4">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="advantages__item">
+                                <img class="advantages__img" src="img/Layer5.jpg" alt="Layer5">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="advantages__item">
+                                <img class="advantages__img246" src="img/Layer6.jpg" alt="Layer6">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class="advantages__images">
+                    <div class="advantages__item">
+                        <img src="img/Layer1.jpg" alt="Layer1">
+                        <div class="advantages__descr">Возможность внедрения и<br>тестирования в реальном<br>времени</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/Layer2.jpg" alt="Layer2">
+                        <div class="advantages__descr">Система “Intellect”, учет уровня<br>доступов</div>
+                    </div>
+                </div>
+                <div class="advantages__images2">
+                    <div class="advantages__item">
+                        <img src="img/Layer3.jpg" alt="Layer3">
+                        <div class="advantages__descr">Возможность использовать из<br>любой точки мира с любого<br>устройства</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/Layer4.jpg" alt="Layer4">
+                        <div class="advantages__descr">Нет необходимости установки<br>и стационарной работы<br>программиста</div>
+                    </div>
+                </div>
+                <div class="advantages__images3">
+                    <div class="advantages__item">
+                        <img src="img/Layer5.jpg" alt="Layer5">
+                        <div class="advantages__descr">“Живые”<br>бизнес-процессы</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/Layer6.jpg" alt="Layer6">
+                        <div class="advantages__descr">Никаких предоплат, оплата<br>после старта</div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <section class="variants">
+        <div class="container">
+            <h2>Варианты развертывания<br>
+                Ваших данных</h2>
+                <div class="variants__img">
+                    <img class="variants__item" src="icons/rectangle.png" alt="rectangle">
+                    <img class="variants__item2" src="icons/rectangle.png" alt="rectangle">
+                </div>
+                <div class="variants__block">
+                    <div class="variants__left">
+                        <div class="variants__title">Облачное хранилище</div>
+                        <div class="variants__subtitle">
+                            Это выделенное пользователю пространство на жестком диске сервера, находящегося в Интернете. 
+                        </div>
+                    </div>
+                    <div class="variants__right">
+                        <div class="variants__title2">Размещение не сервере</div>
+                        <div class="variants__subtitle2">
+                            Услуга аренды пространства в центре обработки данных (колокация серверов) предназначена для клиентов
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="access">
+        <div class="container">
+            <img class="access__hand2 access__hand2_animated" src="icons/hand2.png" alt="hand2">
+            <div class="access__hand1">
+                <img src="icons/hand1.png" alt="hand1">
+            </div>
+            <h2>Приступить очень просто!<br>
+                Нужно получить доступ и начать работу!</h2>
+            <button class="button button_access">связаться с нами</button>
+        </div>
+    </section>
+
+    <a href="#up" class="pageup" href="">
+        <img src="icons/up.svg" alt="up">
+    </a>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
