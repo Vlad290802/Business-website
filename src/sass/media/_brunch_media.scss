@@ -1,0 +1,13 @@
+@media (max-width: 1200px){
+    .brunch{
+        &__carousel{
+            width: 85%;
+            img{
+                width: 98%;
+            }
+        }
+        .slick-next {
+            right: -37px;
+        }
+    }
+}

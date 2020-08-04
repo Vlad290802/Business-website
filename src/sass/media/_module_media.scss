@@ -1,0 +1,10 @@
+@media (max-width: 1200px){
+    .module{
+        padding: 80px 0 80px 30px;
+        &__first, &__second{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}

@@ -60,44 +60,86 @@ $(document).ready(function(){
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;
   });
+  $("a[href^=#footer]").click(function(){
+    var _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+  });
+
+  new WOW().init();
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+        // Modal
+        const modalTrigger = document.querySelectorAll('[data-modal]'),
+        modal = document.querySelector('.modal'),
+        modalCloseBtn = document.querySelector('[data-close]');
+
+    modalTrigger.forEach(btn => {
+        btn.addEventListener('click', function() {
+            modal.classList.add('show');
+            modal.classList.remove('hide');
+            // Либо вариант с toggle - но тогда назначить класс в верстке
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeModal() {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+        // Либо вариант с toggle - но тогда назначить класс в верстке
+        document.body.style.overflow = '';
+    }
+    
+    modalCloseBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" && modal.classList.contains('show')) { 
+            closeModal();
+        }
+    });
+});
 
 
-      // Tabs
-// document.addEventListener('DOMContentLoaded', () => {
+   // Tabs
+    
+//    let tabs = document.querySelectorAll('.brunch__tab'),
+//    tabsContent = document.querySelectorAll('.brunch__content'),
+//    tabsParent = document.querySelector('.brunch__tabs');
 
-//     const tabs = document.querySelectorAll('.brunch__tab'),
-//           tabsCo = document.querySelector('.brunch__inner'),
-//           tabsContent = tabsCo.querySelectorAll('.brunch__content'),
-//           tabsParent = document.querySelector('.brunch__tabs');
+//  function hideTabContent() {
+       
+//        tabsContent.forEach(item => {
+//         item.style.display = 'none';
+//        });
 
-//     function hideTabContent() {
-//         tabsContent.forEach(item => {
-//             item.style.display = 'none';
-//         });
+//        tabs.forEach(item => {
+//            item.classList.remove('brunch__tab_active');
+//        });
+//  }
 
-//         tabs.forEach(item => {
-//             item.classList.remove('brunch__tab_active');
-//         });
-//     }
+//  function showTabContent(i = 0) {
+//   tabsContent[i].style.display = 'block';
+//        tabs[i].classList.add('brunch__item_active');
+//    }
+   
+//    hideTabContent();
+//    showTabContent();
 
-//     function showTabContent(i = 0) {
-//         tabsContent[i].style.display = 'block';
-//         tabs[i].classList.add('tabheader__item_active');
-//     }
-
-//     hideTabContent();
-//     showTabContent();
-
-//     tabsParent.addEventListener('click', (event) => {
-//         const target = event.target;
-        
-// 		if(target && target.classList.contains('brunch__tab')) {
-//             tabs.forEach((item, i) => {
-//                 if (target == item) {
-//                     hideTabContent();
-//                     showTabContent(i);
-//                 }
-//             });
-// 		}
-// 	});
-// });
+//  tabsParent.addEventListener('click', function(event) {
+//    const target = event.target;
+//    if(target && target.classList.contains('brunch__tab')) {
+//            tabs.forEach((item, i) => {
+//                if (target == item) {
+//                    hideTabContent();
+//                    showTabContent(i);
+//                }
+//            });
+//    }
+//    });

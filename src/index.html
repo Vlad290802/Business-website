@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                         <img src="icons/ukraine.png" class="header__flag" alt="ukraine">
                         <div class="header__text">
                             <span>Ukraine</span><br>
-                            <a href="tel:+3806393007002" class="header__phone">tel.+38(063) 930 07 002</a><br>
+                            <a href="tel:+3806393007002" class="header__phone">tel.+38(063) 930 07 002</a>, Kyiv<br>
                             <a href="mailto:hi@vasolutions.com.ua" class="header__phone">hi@vasolutions.com.ua</a>
                         </div>
                     </div>
@@ -74,7 +75,7 @@
                         <li><a href="#module" class="promo__link">Модули</a></li>
                         <li><a href="#brunch" class="promo__link">Отрасли</a></li>
                         <li><a href="#advantages" class="promo__link">О нас</a></li>
-                        <li><a class="promo__link">Наши обязательства</a></li>
+                        <li><a href="#footer" class="promo__link">Наши обязательства</a></li>
                     </ul>
 
                 <div class="promo__wrapper">
@@ -85,7 +86,7 @@
                         <span>PRENGI</span> - Платформа для прозрачного<br>
                         управления бизнесом
                     </div>
-                    <button class="button button_main">Получить доступ</button>
+                    <button data-modal class="button button_main">Получить доступ</button>
 
                     <div class="promo__carousel">
                         <div>
@@ -111,16 +112,16 @@
     <section class="module" id="module">
         <div class="container">
             <div class="module__first">
-                <div>
+                <div class="module__images">
                     <img src="icons/timetable.png" alt="timetable">
                     <div class="module__subtitle">Нет оперативности<br>
                         в принятии решений?</div>
                 </div>
-                <div>
+                <div class="module__images">
                     <img src="icons/control.png" alt="control">
                     <div class="module__subtitle">Нет учета и контроля<br>обслуживания?</div>
                 </div>
-                <div>
+                <div class="module__images">
                     <img src="icons/diagnostic.png" alt="diagnostic">
                     <div class="module__subtitle">Сложно строить прогнозы и<br>анализировать данные?</div>
                 </div>
@@ -128,7 +129,7 @@
             <img src="icons/arrowdown.png" class="module__png module__png_animated" alt="arrowdown">
             <img src="icons/arrowdown.png" class="module__png2 module__png2_animated" alt="arrowdown">
             <h1>С PRENGI</h1>
-            <div class="module__second">
+            <div class="module__second fadeInUp wow">
                 <div>
                     <img src="icons/payments.png" alt="payments">
                     <div class="module__subtitle">Все затраты спланированы<br>
@@ -151,7 +152,7 @@
             <h2>Prengi предоставляет экспертные решения<br>
                 для Вашей отрасли</h2>
                 <div class="tabcontainer">
-                    <table>
+                    <!-- <table>
                         <tr><th>
                             <ul class="brunch__tabs">
                                 <li class="brunch__tab brunch__tab_active">Prengi Production</li>
@@ -162,7 +163,7 @@
                                 <li class="brunch__tab">Prengi HR</li>
                             </ul>
                         </th></tr>
-                    </table>
+                    </table> -->
                     <div class="brunch__carousel">
                         <div class="brunch__inner">
                             <div class="brunch__content brunch__content_active">
@@ -193,49 +194,7 @@
         <div class="container">
             <h2>Преимущества Prengi для<br>
                 Вашей отрасли</h2>
-                <!-- <div class="advantages__images">
-                    <div class="row">
-                        <div class="col">
-                            <div class="advantages__item">
-                                <img class="advantages__img13" src="img/Layer1.jpg" alt="Layer1">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="advantages__item">
-                                <img class="advantages__img246" src="img/Layer2.jpg" alt="Layer2">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="advantages__item">
-                                <img class="advantages__img13" src="img/Layer3.jpg" alt="Layer3">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="advantages__item">
-                                <img class="advantages__img246" src="img/Layer4.jpg" alt="Layer4">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="advantages__item">
-                                <img class="advantages__img" src="img/Layer5.jpg" alt="Layer5">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="advantages__item">
-                                <img class="advantages__img246" src="img/Layer6.jpg" alt="Layer6">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div> -->
-                
-                <div class="advantages__images">
+                <div class="advantages__images fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                     <div class="advantages__item">
                         <img src="img/Layer1.jpg" alt="Layer1">
                         <div class="advantages__descr">Возможность внедрения и<br>тестирования в реальном<br>времени</div>
@@ -245,7 +204,7 @@
                         <div class="advantages__descr">Система “Intellect”, учет уровня<br>доступов</div>
                     </div>
                 </div>
-                <div class="advantages__images2">
+                <div class="advantages__images2 fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                     <div class="advantages__item">
                         <img src="img/Layer3.jpg" alt="Layer3">
                         <div class="advantages__descr">Возможность использовать из<br>любой точки мира с любого<br>устройства</div>
@@ -255,7 +214,7 @@
                         <div class="advantages__descr">Нет необходимости установки<br>и стационарной работы<br>программиста</div>
                     </div>
                 </div>
-                <div class="advantages__images3">
+                <div class="advantages__images3 fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                     <div class="advantages__item">
                         <img src="img/Layer5.jpg" alt="Layer5">
                         <div class="advantages__descr">“Живые”<br>бизнес-процессы</div>
@@ -296,15 +255,76 @@
 
     <section class="access">
         <div class="container">
-            <img class="access__hand2 access__hand2_animated" src="icons/hand2.png" alt="hand2">
+            <img class="access__pointer access__pointer_animated" src="icons/hand2.png" alt="pointer">
             <div class="access__hand1">
                 <img src="icons/hand1.png" alt="hand1">
             </div>
             <h2>Приступить очень просто!<br>
                 Нужно получить доступ и начать работу!</h2>
-            <button class="button button_access">связаться с нами</button>
+            <button data-modal class="button button_access">связаться с нами</button>
         </div>
     </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__blocks">
+                <div class="footer__company">
+                    <h3>О компании</h3>
+                    <img src="icons/footer.png" alt="footer">
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в<br>печати и вэб-дизайне. Lorem Ipsum является стандартной<br>"рыбой" для текстов на латинице с начала XVI века. В то<br>время некий безымянный печатник создал большую<br>коллекцию размеров и форм шрифтов, используя Lorem<br>Ipsum для распечатки образцов.<br></p>
+                    <a href="#"><span>Управление задачами</span></a>
+                </div>
+                <ul class="footer__modules">
+                    <h3>Модули</h3>
+                    <li><a href="#">Обслуживание</a></li>
+                    <li><a href="#">Паспорт объекта</a></li>
+                    <li><a href="#">Автоматизация бизнес процессов (BPM)</a></li>
+                    <li><a href="#">Проектное управление (РРМ)</a></li>
+                    <li><a href="#">Управление подрядчиками</a></li>
+                    <li><a href="#">Персональный дашборд</a></li>
+                    <li><a href="#">Управление задачами</a></li>
+                    <li><a href="#">Управление алгоритмами</a></li>
+                    <li><a href="#">Управление качеством</a></li>
+                    <li><a href="#">Склад</a></li>
+                    <li><a href="#">Service desk</a></li>
+                    <li><a href="#">Календарь</a></li>
+                    <li><a href="#">Prengi market</a></li>
+                </ul>
+                <div class="footer__brunches">
+                    <h3>Отрасли</h3>
+                    <li><a href="#">Промышленность</a></li>
+                    <li><a href="#">Ритейл</a></li>
+                    <li><a href="#">Фасилити</a></li>
+                    <li><a href="#">Логистика</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">HR</a></li>
+                </div>
+                <div class="footer__team">
+                    <h3>О нас</h3>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Наши отношения</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </div>
+            </div>
+            <hr>
+            <h4>© Prengi Ink. 2008-2020 Все права защищены.</h4>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="button">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <a href="#up" class="pageup" href="">
         <img src="icons/up.svg" alt="up">
@@ -313,6 +333,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

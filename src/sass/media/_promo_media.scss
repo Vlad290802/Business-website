@@ -1,0 +1,13 @@
+@media (max-width: 1200px){
+    .promo{
+        &__menu{
+            margin-left: 450px;
+        }
+        &__title{
+            font-size: 37px;
+        }
+        &__carousel{
+            margin-left: 530px;
+        }
+    }
+}

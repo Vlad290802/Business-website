@@ -42,6 +42,10 @@
         color: #ffffff;
         text-decoration: none;
         cursor: pointer;
+        &_active{
+            color: $main-color;
+            font-size: 16px;
+        }
         &:hover{
             transition: 0.5s all;
             color: $main-color;
