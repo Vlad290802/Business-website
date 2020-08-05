@@ -6,5 +6,18 @@
                 width: 90%;
             }
         }
+        &__subtitle{
+            margin-left: -30px;
+            margin-top: -73px;
+        }
+    }
+}
+@media (max-width: 991px){
+    .module{
+        min-height: 750px;
+        &__subtitle{
+            font-size: 13px; 
+            margin-top: -55px;
+        }
     }
 }

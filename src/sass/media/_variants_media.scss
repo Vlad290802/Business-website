@@ -1,0 +1,26 @@
+@media (max-width: 1200px){
+    .variants{
+        &__item{
+            margin-left: 290px;
+        }
+        &__item2{
+            margin-right: 290px;
+        }
+    }
+}
+@media (max-width: 991px){
+    .variants{
+        &__item{
+            margin-left: 140px;
+        }
+        &__item2{
+            margin-right: 140px;
+        }
+        &__title, &__title2{
+            font-size: 20px;
+        }
+        &__subtitle, &__subtitle2{
+            font-size: 14px;
+        }
+    }
+}
