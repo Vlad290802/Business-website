@@ -1,25 +1,60 @@
+// .header{
+//     position: relative;
+//     max-width: 1140px;
+//     margin: 0 auto;
+//     &__country{
+//         display: block;
+//         padding: 19px 0 19px 0;
+//     }
+//     &__flag{
+//         margin-left: -36px;
+//     }
+//     &__text{
+//         justify-content: space-between;
+//         padding-left: 1px;
+//         margin-top: -26px;
+//         font-size: 12px;
+//         font-weight: 300;
+//         line-height: 18px;
+//         span{
+//             font-size: 14px;
+//             font-weight: 700;
+//         }
+//     }
+//     &__phone{
+//         color: #242424;
+//         &:hover {
+//             color: #242424;
+//             text-decoration: none;
+//         }
+//     }
+// }
+// .hamburger{
+//     display: none;
+// }
+
 .header{
     position: relative;
-    max-width: 1140px;
-    margin: 0 auto;
-    &__country{
-        display: block;
-        padding: 19px 0 19px 0;
+    padding: 19px 0 19px 0;
+    min-height: 85px;
+    .menu{
+        display: flex;
+	    justify-content: space-between;
+        margin: 0 auto;
+        list-style-type: none;
+        width: 100%;
+        margin-left: -35px;
+        margin-top: -27px;
     }
-    &__flag{
-        margin-left: -36px;
+    img{
+        margin-bottom: -52px;
+        margin-right: 10px;
     }
     &__text{
-        justify-content: space-between;
-        padding-left: 1px;
-        margin-top: -26px;
+        margin-left: 40px;
         font-size: 12px;
         font-weight: 300;
         line-height: 18px;
-        span{
-            font-size: 14px;
-            font-weight: 700;
-        }
     }
     &__phone{
         color: #242424;
@@ -27,5 +62,8 @@
             color: #242424;
             text-decoration: none;
         }
+    }
+    .hamburger{
+        display: none;
     }
 }

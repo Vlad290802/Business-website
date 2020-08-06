@@ -24,3 +24,36 @@
         }
     }
 }
+@media (max-width: 575px){
+    .variants{
+        min-height: 380px;
+        h2{
+            font-size: 26px;
+        }
+        &__item{
+            margin-left: 20px;
+        }
+        &__item2{
+            margin-right: 24px;
+        }
+        &__right{
+            transform: translateX(-27%);
+        }
+        &__title, &__title2{
+            margin-top: -75px;
+        }
+        &__title{
+            margin-left: 41px;
+        }
+        &__title2{
+            transform: translateX(-45%);
+        }
+        &__subtitle, &__subtitle2{
+            font-size: 14px;
+            margin-top: 1px;
+        }
+        &__subtitle2{
+            transform: translateX(-45%);
+        }
+    }
+}

@@ -59,3 +59,26 @@
         }
     }
 }
+@media (max-width: 575px){
+    .promo{
+        &__menu{
+            flex-direction: column;
+            margin-top: -70px;
+            margin-left: 120px;
+        }
+        li{
+            padding-top: 10px;
+        }
+        &__title{
+            margin-top: -60px;
+            font-size: 29px;
+        }
+        &__subtitle{
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        &__carousel{
+            display: none;
+        }
+    }
+}

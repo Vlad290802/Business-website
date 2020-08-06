@@ -21,3 +21,20 @@
         }
     }
 }
+@media (max-width: 575px){
+    .module{
+        padding: 60px 0 70px 35px;
+        min-height: 750px;
+        &__first, &__second{
+            flex-direction: column;
+            margin: 0 auto;
+            img{
+                margin-top: 15px;
+            }
+        }
+        &__subtitle{
+            font-size: 13px; 
+            margin-top: -55px;
+        }
+    }
+}

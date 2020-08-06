@@ -11,3 +11,14 @@
         }
     }
 }
+@media (max-width: 575px){
+    .brunch{
+        min-height: 460px;
+        .slick-prev{
+            left: -30px;
+        }
+        .slick-next {
+            right: -25px;
+        }
+    }
+}

@@ -8,3 +8,13 @@
         }
     }
 }
+@media (max-width: 767px){
+    .footer{
+        &__modules{
+            display: none;
+        }
+        &__brunches{
+            display: none;
+        }
+    }
+}
