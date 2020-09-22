@@ -1,0 +1,14 @@
+@media (max-width: 575px){
+    .modal{
+        &__content {
+            margin: 0 auto;
+            width: 80%;
+        }
+        &__input {
+            width: 80%;
+        }
+        .button {
+            width: 80%;
+        }
+    }
+}

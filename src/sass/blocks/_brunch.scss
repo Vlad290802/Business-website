@@ -61,21 +61,21 @@
             width: 947px;
             margin: 0 auto;
         }
-        .slick-prev, .slick-next{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-60%);
-            left: -59px;
-            border: none;
-            background-color: inherit;
-            img{
-                width: 18px;
-                height: 60px;
-            }
+    }
+    &__slider-prev, &__slider-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%);
+        left: 20px;
+        border: none;
+        background-color: inherit;
+        img{
+            width: 18px;
+            height: 60px;
         }
-        .slick-next{
-            right: -85px;
-            left: auto;
-        }
+    }
+    &__slider-next{
+        right: 55px;
+        left: auto;
     }
 }

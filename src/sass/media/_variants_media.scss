@@ -30,30 +30,91 @@
         h2{
             font-size: 26px;
         }
+        &__img{
+            img{
+                display: none;
+            }
+        }
         &__item{
             margin-left: 20px;
         }
         &__item2{
             margin-right: 24px;
         }
+        &__left, &__right{
+            margin-top: 30px;
+            transform: translateX(39%);
+        }
         &__right{
-            transform: translateX(-27%);
+            padding-top: 80px;
+            transform: translateX(27%);
+            width: 69%;
+        }
+        &__left{
+            margin-top: 30px;
+            margin-left: 56px;
+            width: 55%;
+        }
+        &__block{
+            display: flex;
+            flex-direction: column;
         }
         &__title, &__title2{
             margin-top: -75px;
         }
         &__title{
-            margin-left: 41px;
+            text-align: left;
+            margin-left: -2px;
         }
         &__title2{
-            transform: translateX(-45%);
+            text-align: center;
+            transform: translateX(-48%);
         }
         &__subtitle, &__subtitle2{
             font-size: 14px;
             margin-top: 1px;
         }
-        &__subtitle2{
-            transform: translateX(-45%);
+        &__subtitle{
+            text-align: left;
         }
+        &__subtitle2{
+            transform: translateX(-37%);
+        }
+    }
+}
+@media (max-width: 424px){
+    .variants{
+        min-height: 380px;
+        h2{
+            font-size: 26px;
+        }
+        &__item{
+            margin-left: 20px;
+        }
+        &__item2{
+            margin-right: 24px;
+        }
+        // &__right{
+        //     transform: translateX(-42%);
+        // }
+        // &__left{
+        //     transform: translateX(2%);
+        // }
+        // &__title, &__title2{
+        //     margin-top: -75px;
+        // }
+        // &__title{
+        //     margin-left: 41px;
+        // }
+        // &__title2{
+        //     transform: translateX(-45%);
+        // }
+        // &__subtitle, &__subtitle2{
+        //     font-size: 14px;
+        //     margin-top: 1px;
+        // }
+        // &__subtitle2{
+        //     transform: translateX(-45%);
+        // }
     }
 }

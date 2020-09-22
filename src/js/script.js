@@ -9,14 +9,14 @@ $(document).ready(function(){
 		});
 	});
 
-	$(document).ready(function(){
-		$('.brunch__inner').slick({
-			dots: false,
-			speed: 1000,
-			prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left-solid.png"></button>',
-			nextArrow: '<button type="button" class="slick-next"><img src="../icons/right-solid.png"></button>'
-		});
-	});
+	// $(document).ready(function(){
+	// 	$('.brunch__inner').slick({
+	// 		dots: false,
+	// 		speed: 1000,
+	// 		prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left-solid.png"></button>',
+	// 		nextArrow: '<button type="button" class="slick-next"><img src="../icons/right-solid.png"></button>'
+	// 	});
+	// });
 
 //Smooth and scroll up
 	$(window).scroll(function(){
@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+$('input[name=phone]').mask("+380 (99) 999-9999");
 
 
 	 // Tabs
@@ -176,3 +177,51 @@ document.addEventListener('DOMContentLoaded', () => {
 //            });
 //    }
 //    });
+
+
+
+// Slider
+
+let offset = 0;
+let slideIndex = 1;
+
+const slides = document.querySelectorAll('.brunch__content'),
+	slider = document.querySelector('.brunch__slider'),
+	prev = document.querySelector('.brunch__slider-prev'),
+	next = document.querySelector('.brunch__slider-next'),
+	slidesWrapper = document.querySelector('.brunch__carousel'),
+	slidesField = document.querySelector('.brunch__inner'),
+	width = window.getComputedStyle(slidesWrapper).width;
+
+
+    slidesField.style.width = 100 * slides.length + '%';
+    slidesField.style.display = 'flex';
+    slidesField.style.transition = '0.5s all';
+
+    slidesWrapper.style.overflow = 'hidden';
+
+    slides.forEach(slide => {
+        slide.style.width = width;
+    });
+
+	slider.style.position = 'relative';
+	
+	next.addEventListener('click', () => {
+		if (offset == (+width.slice(0, width.length - 2) * (slides.length - 1))) {
+			offset = 0;
+		} else {
+			offset += +width.slice(0, width.length - 2); 
+		}
+ 
+		slidesField.style.transform = `translateX(-${offset}px)`;
+	});
+
+	prev.addEventListener('click', () => {
+		if (offset == 0) {
+			offset = +width.slice(0, width.length - 2) * (slides.length - 1);
+		} else {
+			offset -= +width.slice(0, width.length - 2);
+		}
+ 
+		slidesField.style.transform = `translateX(-${offset}px)`;
+	});
